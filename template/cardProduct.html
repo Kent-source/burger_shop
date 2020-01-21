@@ -1,0 +1,21 @@
+<div id="cardTemplate" style="display:none">
+    <div class="productCard flexColomn">
+        <img class="imgMarket">
+        <div class="imgProductDiv flex">
+            <img class="imgProduct">
+        </div>
+        <p class="nameProduct"></p>
+        <div class="descriptionDiv flex">
+            <u class="descriptionProduct"></u>
+        </div>
+        <p class="priceProduct"></p>
+        <div class="number-input flex">
+            <button id="stepDown" class="buttonInc"
+                onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+            <input class="quantity" min="0" max="99" name="quantity" value="0" type="number">
+            <button id="stepUp" class="buttonInc"
+                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+        </div>
+        <button class="inBasketProduct">В КОРЗИНУ</button>
+    </div>
+</div>
